@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*{
+  font-family: Outfit;
+}
+
+:root {
+  --primary-color: #5f6FFF;
+}
+
+.grid-auto {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+.active hr{
+    /* both are work for same */
+    /* @apply block */ 
+    display:block
+}
+
+/* Corrected CSS to hide the scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox
+.hide-scrollbar {
+  scrollbar-width: none;
+} */
+
+@media (max-width: 740px) {
+  .active p {
+    color: white;
+    background-color: #5f6FFF; /* Assuming your primary color is #5f6FFF */
+  }
+}
+

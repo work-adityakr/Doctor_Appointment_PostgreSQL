@@ -1,0 +1,51 @@
+# Node.js / Backend Dependencies
+#--------------------------------
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment Variables - VERY IMPORTANT
+# These files contain secret keys and should NEVER be committed.
+#----------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Frontend Build Output (React / Vite)
+#---------------------------------------
+dist/
+build/
+.vite/
+.next/
+.svelte-kit/
+
+# Log files
+#-----------
+*.log
+logs/
+
+# Temporary files
+#-----------------
+*.tmp
+*.swp
+*~
+
+# Operating System Files
+#------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# IDE / Editor Files
+#--------------------
+# VSCode
+.vscode/
+# JetBrains (WebStorm, etc.)
+.idea/
