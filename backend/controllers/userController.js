@@ -2,10 +2,7 @@ import validator from 'validator'
 import { prisma } from '../config/postgresql.js'
 import bcrypt from "bcrypt"
 import jwt from 'jsonwebtoken'
-// import userModel from '../models/userModel.js'
 import { v2 as cloudinary } from 'cloudinary'
-// import appointmentModel from '../models/appointmentModel.js'
-// import doctorModel from '../models/doctorModel.js'
 import razorpay from 'razorpay'
 
 //API to register user
