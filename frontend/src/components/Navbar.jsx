@@ -46,12 +46,12 @@ const Navbar = () => {
                             <img className='w-9 h-9 rounded-full object-cover border border-gray-200' src={userData.image} alt="pic" />
                             <img className='w-2.5 transition-transform duration-300 group-hover:rotate-180' src={assets.dropdown_icon} alt="icon" />
 
-                            <div className='absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 
+                            <div className='absolute top-full right-0 pt-2 text-base font-medium text-gray-600 z-20 
                                             transition-all duration-500 ease-in-out
                                             invisible opacity-0 scale-95 origin-top-right
                                             group-hover:visible group-hover:opacity-100 group-hover:scale-100'>
 
-                                <div className='min-w-48 bg-white shadow-xl rounded-lg flex flex-col gap-4 p-4 border border-gray-100' >
+                                <div className='mt-2 min-w-48 bg-white shadow-xl rounded-lg flex flex-col gap-4 p-4 border border-gray-100' >
                                     <p onClick={() => navigate('my-profile')} className='hover:text-[#5f6FFF] cursor-pointer transition-colors'>My Profile</p>
                                     <p onClick={() => navigate('my-appointment')} className='hover:text-[#5f6FFF] cursor-pointer transition-colors'>My Appointment</p>
                                     <p onClick={logout} className='hover:text-red-500 cursor-pointer transition-colors'>Logout</p>
